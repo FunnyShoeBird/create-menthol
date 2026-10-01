@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://www.shoebird.fun/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/FunnyShoeBird/create-menthol"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/create-menthol/icon.png",
