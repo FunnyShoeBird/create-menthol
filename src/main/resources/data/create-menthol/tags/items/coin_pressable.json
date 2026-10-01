@@ -1,5 +1,9 @@
 {
   "values": [
-    "create-menthol:copper_coin"
+    "create-menthol:brass_coin",
+    "create-menthol:copper_coin",
+    "create-menthol:gold_coin",
+    "create-menthol:iron_coin",
+    "create-menthol:zinc_coin"
   ]
 }
