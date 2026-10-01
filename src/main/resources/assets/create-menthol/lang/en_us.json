@@ -1,0 +1,13 @@
+{
+  "item.create-menthol.brass_coin": "Brass Coin",
+  "item.create-menthol.copper_coin": "Copper Coin",
+  "item.create-menthol.gold_coin": "Gold Coin",
+  "item.create-menthol.iron_coin": "Iron Coin",
+  "item.create-menthol.zinc_coin": "Zinc Coin",
+  "block.create-menthol.coin_press": "Coin Press",
+  "create-menthol.blank_coin": "blank",
+  "create-menthol.gui.coin_press.title" : "Coin Press",
+  "create-menthol.gui.coin_press.currencynamefield": "Currency Name",
+  "create-menthol.gui.coin_press.currencysecurityfield": "Security Code",
+  "itemGroup.create-menthol.menthol_items": "Create: Menthol"
+}

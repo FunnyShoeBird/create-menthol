@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:brass_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "item": "create-menthol:brass_coin"
+    }
+  ]
+}

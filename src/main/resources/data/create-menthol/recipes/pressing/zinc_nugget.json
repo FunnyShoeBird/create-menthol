@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:zinc_nuggets"
+    }
+  ],
+  "results": [
+    {
+      "item": "create-menthol:zinc_coin"
+    }
+  ]
+}
