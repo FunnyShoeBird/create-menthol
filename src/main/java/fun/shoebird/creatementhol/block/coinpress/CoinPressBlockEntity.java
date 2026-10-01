@@ -14,7 +14,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtByte;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
 import net.minecraft.nbt.NbtString;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
@@ -142,6 +141,11 @@ public class CoinPressBlockEntity extends KineticBlockEntity implements Pressing
 
     private boolean canPressItem(ItemStack item) {
         return item.isIn(COIN_PRESSABLE) && !item.getOrCreateNbt().getBoolean("IsMinted");
+    }
+
+    @Override
+    public float calculateStressApplied() {
+        return 8;
     }
 
     private ItemStack pressItem(ItemStack item) {
