@@ -17,22 +17,7 @@ repositories {
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" }
 }
 
-loom {
-//	splitEnvironmentSourceSets()
-//
-//	mods {
-//		"create-menthol" {
-//			sourceSet sourceSets.main
-//			sourceSet sourceSets.client
-//		}
-//	}
 
-	runs {
-		client {
-			programArgs(["--username", "funnyshoe", "--uuid", "8774c053-4c19-45c1-9965-6d8a42b4de6d"])
-		}
-	}
-}
 
 dependencies {
 	// To change the versions see the gradle.properties file

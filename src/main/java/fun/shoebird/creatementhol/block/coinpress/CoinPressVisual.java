@@ -23,7 +23,6 @@ import org.joml.Quaternionf;
 
 import java.util.function.Consumer;
 
-
 public class CoinPressVisual extends ShaftVisual<CoinPressBlockEntity> implements SimpleDynamicVisual {
     private static final PartialModel COIN_PRESS_HEAD = PartialModel.of(new Identifier(CreateMenthol.MOD_ID, "block/coin_press/head"));
     private final OrientedInstance pressHead;

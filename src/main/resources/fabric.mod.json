@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"fun.shoebird.creatementhol.CreateMenthol"
+		],
+		"client": [
+			"fun.shoebird.creatementhol.CreateMenthol"
 		]
 	},
 	"mixins": [

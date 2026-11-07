@@ -8,6 +8,9 @@ import fun.shoebird.creatementhol.block.coinpress.CoinPressVisual;
 import fun.shoebird.creatementhol.block.coinpress.ConfigureCoinPressPacket;
 import io.github.fabricators_of_create.porting_lib.event.common.ModsLoadedCallback;
 import net.createmod.catnip.lang.FontHelper;
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
@@ -18,7 +21,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CreateMenthol implements ModInitializer {
+public class CreateMenthol implements ModInitializer, ClientModInitializer {
 	public static final String MOD_ID = "create-menthol";
 
 	public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID)
@@ -39,6 +42,21 @@ public class CreateMenthol implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModsLoadedCallback.EVENT.register(envType -> { ConfigureCoinPressPacket.register(); });
+
+		ModBlocks.register();
+		ModItems.register();
+		ModItemGroups.register();
+
+		ModBlockEntities.register();
+
+		REGISTRATE.register();
+
+		LOGGER.info("Hello Twitter world!");
+	}
+
+	@Override
+	public void onInitializeClient() {
 		ModsLoadedCallback.EVENT.register(envType -> { ConfigureCoinPressPacket.register(); CoinPressVisual.register(); });
 
 		ModBlocks.register();
@@ -49,10 +67,11 @@ public class CreateMenthol implements ModInitializer {
 
 		REGISTRATE.register();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Client world!");
 	}
 
 	public static Identifier id(String path) {
 		return new Identifier(MOD_ID, path);
 	}
+
 }
