@@ -57,15 +57,15 @@ public class CreateMenthol implements ModInitializer, ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		ModsLoadedCallback.EVENT.register(envType -> { ConfigureCoinPressPacket.register(); CoinPressVisual.register(); });
+		ModsLoadedCallback.EVENT.register(envType -> { CoinPressVisual.register(); });
 
-		ModBlocks.register();
-		ModItems.register();
-		ModItemGroups.register();
-
-		ModBlockEntities.register();
-
-		REGISTRATE.register();
+//		ModBlocks.register();
+//		ModItems.register();
+//		ModItemGroups.register();
+//
+//		ModBlockEntities.register();
+//
+//		REGISTRATE.register();
 
 		LOGGER.info("Hello Client world!");
 	}
